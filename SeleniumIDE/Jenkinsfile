@@ -3,22 +3,22 @@ pipeline
 agent any
 stages
 {
-   stage("") {
+   stage("Checkout Code") {
    //checkout the repository
    steps {
       git branch: 'main', url: 'https://github.com/xchshark/Jenkins_Selenium'
    }
    }
-   stage("") {
+   stage("Dotnet Install") {
    //install dotnet
    }
-   stage("") {
+   stage("Dependecies") {
    //install dependecies
    }
-   stage("") {
+   stage("Build") {
    //build
    }
-   stage("") {
+   stage("Tests") {
    //run tests
    }
    
