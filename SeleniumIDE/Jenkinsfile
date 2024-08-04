@@ -1,0 +1,26 @@
+pipeline 
+{
+agent any
+stages
+{
+   stage("") {
+   //checkout the repository
+   steps {
+      git branch: 'main', url: 'https://github.com/xchshark/Jenkins_Selenium'
+   }
+   }
+   stage("") {
+   //install dotnet
+   }
+   stage("") {
+   //install dependecies
+   }
+   stage("") {
+   //build
+   }
+   stage("") {
+   //run tests
+   }
+   
+}
+}
