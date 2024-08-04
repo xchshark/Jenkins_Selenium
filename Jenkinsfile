@@ -14,9 +14,8 @@ stages
    steps {
       bat '''
       echo Downloading DotNet SDK LelinaTkaPu
-      curl -l -o dotnet-sdk-6.0.132-win-x86.exe https://download.visualstudio.microsoft.com/download/pr/ad59f1d1-5f19-4474-86be-2f09ab195618/5c7a64445dae84e386bb88e1f6ac09e4/dotnet-sdk-6.0.132-win-x86.exe
-      echo installing DotNet SDK 6.0 
-      dotnet-sdk-6.0.132-win-x86.exe /quiet /norestart 
+      choco install dotnet-sdk -y --version=6.0.100
+   
       '''
       }
       }
